@@ -1,0 +1,27 @@
+<nav class="navbar">
+  <div class="left-buttons" *ngIf="!isSmallScreen">
+    <a href="#" class="nav-button">Om mig</a>
+    <a href="#" class="nav-button">Ydelser</a>
+    <a href="#" class="nav-button">Kontakt mig</a>
+  </div>
+  <div class="center-button">
+    <a href="#" class="brand-logo">Jennifer Rassmusen</a>
+  </div>
+  <div class="right-buttons">
+    <a href="#" class="nav-button">Login</a>
+  </div>
+  <div
+    class="dropdown-menu"
+    *ngIf="isSmallScreen"
+    [ngClass]="{ open: isDropdownOpen }"
+  >
+    <button class="dropbtn" (click)="toggleDropdown()">Menu</button>
+    <div class="dropdown-content">
+      <a href="om">Om mig</a>
+      <a href="#">Ydelser</a>
+      <a href="#">Kontakt mig</a>
+      <div class="link-divider"></div>
+      <a href="#">Login</a>
+    </div>
+  </div>
+</nav>
