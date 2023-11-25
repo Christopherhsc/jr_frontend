@@ -3,10 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
+  background-color: var(--primary);
   padding: 15px;
-  color: white;
+  color: var(--detail);
   width: 100%;
+  border-bottom: 2px solid var(--detail);
+
+  box-shadow: 1px 10px 24px 6px rgba(255,255,255,0.75);
+  -webkit-box-shadow: 1px 10px 24px 6px rgba(255,255,255,0.75);
+  -moz-box-shadow: 1px 10px 24px 6px rgba(255,255,255,0.75);
 }
 
 .center-button {
@@ -17,7 +22,7 @@
 
 .brand-logo {
   text-decoration: none;
-  color: white;
+  color: var(--detail);
   font-weight: bold;
 }
 
@@ -28,7 +33,7 @@
 .nav-button {
   margin-right: 50px;
   text-decoration: none;
-  color: white;
+  color: var(--detail);
 }
 
 .dropdown-menu {
@@ -38,8 +43,8 @@
 
 .dropdown-menu .dropbtn {
   display: block;
-  background-color: #333;
-  color: white;
+  background-color: var(--primary);
+  color: var(--detail);
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -52,29 +57,29 @@
   position: absolute;
   top: calc(100% + 10px);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: var(--primary);
   width: 280px;
   z-index: 1;
 
-  border: 2px solid white;
-border-radius: 5px;
+  border: 2px solid var(--detail);
+  border-radius: 5px;
 }
 
 .dropdown-menu .dropdown-content a {
   display: block;
-  color: white;
+  color: var(--detail);
   text-decoration: none;
   padding: 10px;
   transition: background-color 0.3s ease;
 }
 
 .dropdown-menu .dropdown-content a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--transparent);
 }
 
-.link-divider{
-    width: 90%;
-    border-bottom: 1px solid white;
+.link-divider {
+  width: 90%;
+  border-bottom: 1px solid var(--detail);
 }
 
 @media screen and (max-width: 1050px) {
@@ -90,7 +95,7 @@ border-radius: 5px;
 
   .brand-logo {
     text-decoration: none;
-    color: white;
+    color: var(--detail);
     font-weight: bold;
   }
 
