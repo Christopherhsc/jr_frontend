@@ -1,10 +1,12 @@
 .navbar {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   padding: 15px;
   color: white;
+  width: 100%;
 }
 
 .center-button {
@@ -24,20 +26,20 @@
 }
 
 .nav-button {
-  margin-right: 15px;
+  margin-right: 50px;
   text-decoration: none;
   color: white;
 }
 
 .dropdown-menu {
   position: relative;
+  margin-right: 50px;
 }
 
 .dropdown-menu .dropbtn {
   display: block;
   background-color: #333;
   color: white;
-  padding: 12px;
   font-size: 16px;
   border: none;
   cursor: pointer;
@@ -49,11 +51,13 @@
   display: none;
   position: absolute;
   top: calc(100% + 10px);
-  left: 50%;
   transform: translateX(-50%);
   background-color: #333;
-  min-width: 160px;
+  width: 280px;
   z-index: 1;
+
+  border: 2px solid white;
+border-radius: 5px;
 }
 
 .dropdown-menu .dropdown-content a {
@@ -73,7 +77,7 @@
     border-bottom: 1px solid white;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1050px) {
   .left-buttons,
   .right-buttons {
     display: none;

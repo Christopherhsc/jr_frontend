@@ -14,9 +14,9 @@ export class HeaderComponent {
   }
 
   constructor() {
-    this.isSmallScreen = window.innerWidth <= 700;
+    this.isSmallScreen = window.innerWidth <= 1050;
     window.addEventListener('resize', () => {
-      this.isSmallScreen = window.innerWidth <= 700;
+      this.isSmallScreen = window.innerWidth <= 1050;
     });
   }
 }
