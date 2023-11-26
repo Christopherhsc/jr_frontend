@@ -1,26 +1,52 @@
 .home-background {
-    background: url(/assets/home.jpg) no-repeat;
-    background-size: cover;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-  }
+  background: url(/assets/home.jpg) no-repeat;
+  background-size: cover;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
 
-  .home-content {
-    text-align: center;
-    max-width: 650px;
-    flex-direction: column;
-    margin: 5%;
-    border-radius: 2px;
-  }
+.arrow-link {
+  position: absolute;
+  top: 50%;
+  right: 0px; 
+  height: 100vh;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.arrow-link:hover{
+  transform: translate(10px)
+}
 
-.home-content h3{
+
+
+.arrow-link-image {
+  width: 150px;
+  height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.arrow-link-image:hover {
+  transform: translateX(10px);
+}
+
+.home-content {
+  text-align: center;
+  max-width: 650px;
+  flex-direction: column;
+  margin: 5%;
+  border-radius: 2px;
+}
+
+.home-content h3 {
   color: var(--primary);
   font-size: 36px;
 }
 
-.home-content h3:last-child{
+.home-content h3:last-child {
   font-weight: 500;
   margin-bottom: 15%;
 }
@@ -129,26 +155,26 @@
 }
 
 @media screen and (max-width: 768px) {
-    .home-content {
-      padding-left: 0;
-      padding-bottom: 0;
-    }
-  
-    .home-paragraph-holder {
-      width: 90%; /* Adjust width for smaller screens */
-    }
-  
-    .home-content .btn-box-holder {
-      flex-direction: column; /* Stack buttons vertically on smaller screens */
-    }
-  
-    .home-content .btn-box {
-      width: 70%; /* Adjust button width */
-      margin: 10px auto; /* Adjust margin */
-    }
-  
-    .home-sci {
-      width: 70%; /* Adjust width for smaller screens */
-      padding-top: 10%; /* Adjust padding */
-    }
+  .home-content {
+    padding-left: 0;
+    padding-bottom: 0;
   }
+
+  .home-paragraph-holder {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+
+  .home-content .btn-box-holder {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+  }
+
+  .home-content .btn-box {
+    width: 70%; /* Adjust button width */
+    margin: 10px auto; /* Adjust margin */
+  }
+
+  .home-sci {
+    width: 70%; /* Adjust width for smaller screens */
+    padding-top: 10%; /* Adjust padding */
+  }
+}
