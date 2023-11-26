@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 
+import { MatDialogModule } from '@angular/material/dialog';
+
 
 
 @NgModule({
@@ -9,7 +11,8 @@ import { HeaderComponent } from './components/header/header.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatDialogModule
   ],
   exports: [
     HeaderComponent

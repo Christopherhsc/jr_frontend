@@ -1,0 +1,12 @@
+.modal-content {
+  border: 2px solid var(--detail);
+  background-color: var(--primary);
+}
+
+.modal-title {
+    display: flex;
+  color: var(--detail);
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
