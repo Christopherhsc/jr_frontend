@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { MatDialogRef } from '@angular/material/dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 import { animate, state, style, transition, trigger } from '@angular/animations';
+import { RegisterComponent } from '../register/register.component';
 
 @Component({
   selector: 'app-login',
@@ -20,7 +21,7 @@ import { animate, state, style, transition, trigger } from '@angular/animations'
   ]
 })
 export class LoginComponent {
-  constructor(public dialogRef: MatDialogRef<LoginComponent>) {}
+  constructor(public dialogRef: MatDialogRef<LoginComponent>, private dialog: MatDialog) {}
 
   onSubmit(): void {
     // Handle login form submission logic
@@ -28,6 +29,13 @@ export class LoginComponent {
 
   onRegister(): void {
     // Handle register button action
+  }
+
+  openRegisterModal(): void {
+    const dialogRef = this.dialog.open(RegisterComponent, {
+      width: '500px',
+    });
+    this.close()
   }
 
   close(): void {

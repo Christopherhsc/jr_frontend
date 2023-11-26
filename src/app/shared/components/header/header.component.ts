@@ -23,7 +23,7 @@ export class HeaderComponent {
 
   openLoginModal(): void {
     const dialogRef = this.dialog.open(LoginComponent, {
-      width: '400px',
+      width: '500px',
     });
   }
 }
