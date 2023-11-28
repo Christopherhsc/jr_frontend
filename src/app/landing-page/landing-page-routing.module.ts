@@ -8,7 +8,8 @@ const routes: Routes = [{
   component: LandingPageComponent
 },{
   path: 'om',
-  component: AboutComponent
+  component: AboutComponent,
+  data: { animation: ''}
 }];
 
 @NgModule({
