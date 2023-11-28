@@ -1,28 +1,25 @@
 import { NgModule } from '@angular/core';
 
-
 // modules
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from './shared/shared.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // components
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AboutComponent } from './landing-page/components/about/about.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LandingPageComponent
-  ],
+  declarations: [AppComponent, LandingPageComponent, AboutComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
