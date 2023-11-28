@@ -6,11 +6,10 @@ import { AboutComponent } from './landing-page/components/about/about.component'
 const routes: Routes = [
   {
     path: '',
-    component: LandingPageComponent,
-  },
-  {
-    path: 'om',
-    component: AboutComponent,
+    loadChildren: () =>
+      import('./landing-page/landing-page.module').then(
+        (m) => m.LandingPageModule
+      ),
   },
   {
     path: 'login',

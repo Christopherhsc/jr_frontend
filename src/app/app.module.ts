@@ -10,9 +10,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { AboutComponent } from './landing-page/components/about/about.component';
+import { HomeComponent } from './landing-page/components/home/home.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingPageComponent, AboutComponent],
+  declarations: [AppComponent, LandingPageComponent, AboutComponent, HomeComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
