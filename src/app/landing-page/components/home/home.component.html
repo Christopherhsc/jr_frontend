@@ -45,7 +45,7 @@
         <a href="#"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-    <div (click)="goToAnotherComponent()" class="arrow-link">
+    <div class="arrow-link" *ngIf="isHomeVisible" (click)="onArrowClick()">
       <img class="arrow-link-image" src="../../assets/arrow_right.png">
-    </div>
+  </div>
   </div>

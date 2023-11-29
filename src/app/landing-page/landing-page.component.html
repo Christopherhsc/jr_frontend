@@ -1,1 +1,6 @@
-<router-outlet></router-outlet>
+<div class="container">
+    <div class="slider-container">
+        <app-home [isHomeVisible]="isHomeVisible" (arrowClicked)="routeToAbout()"></app-home>
+        <app-about></app-about>
+    </div>
+</div>

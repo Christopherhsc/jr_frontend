@@ -1,0 +1,15 @@
+.container {
+    overflow: hidden;
+    width: 100%; /* Adjust as needed */
+}
+
+.slider-container {
+    display: flex;
+    width: 200%; /* If you have 2 components, set to 200% */
+    transition: transform 1s ease-in-out; /* Smooth sliding effect */
+}
+
+app-home, app-about {
+    width: 50%; /* Each component takes up half of the slider container */
+    flex-shrink: 0; /* Prevents components from resizing */
+}
