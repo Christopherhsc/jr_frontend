@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,11 +7,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./about.component.scss'],
 })
 export class AboutComponent {
-  constructor(private router: Router) {}
+  currentText: string = 'Om';
+  currentIndex: number = 1;
+
 
   ngOnInit(): void {}
-
-  goToAnotherComponent() {
-    this.router.navigateByUrl('/other-component');
-  }
 }

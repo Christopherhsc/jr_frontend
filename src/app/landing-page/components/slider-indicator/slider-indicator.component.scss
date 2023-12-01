@@ -1,0 +1,39 @@
+.indicator {
+    width: 50px;
+    height: 5px;
+    background-color: var(--detail);
+    margin: 0 5px;
+    border-radius: 2px;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+  .slider-indicator {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+  }
+  .text-indicator{
+    color: var(--primary);
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    font-size: 20px;
+  }
+  .subText-indicator{
+    color: var(--primary);
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    font-size: 10px;
+    width: 200px;
+  }
+  
+  .indicator.active {
+    background-color: var(--primary);
+  }

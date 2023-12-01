@@ -7,28 +7,6 @@
     display: flex;
   }
   
-  .arrow-link {
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    height: 90%;
-    transform: translateY(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
-  .arrow-link-image {
-    width: 150px;
-    height: 100%;
-    transition: transform 1s ease;
-  }
-  
-  .arrow-link-image:hover {
-    transform: translateX(10px);
-  }
-  
   .home-content {
     text-align: center;
     max-width: 650px;
@@ -129,6 +107,9 @@
     z-index: 1;
     overflow: hidden;
   }
+  
+ 
+  
   
   @media screen and (max-width: 768px) {
     .home-content {

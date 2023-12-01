@@ -8,13 +8,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  @Output() arrowClicked = new EventEmitter<void>();
-  @Input() isHomeVisible: boolean;
-  
-  onArrowClick(): void {
-      this.arrowClicked.emit();
-  }
-  constructor(private router: Router) {}
+  currentText: string = 'Hjem';
+  currentIndex: number = 0;
 
   ngOnInit(): void {}
 }
