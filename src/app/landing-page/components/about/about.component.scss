@@ -5,7 +5,7 @@
     var(--detail) 90%,
     var(--detail) 100%
   );
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .about-container {
@@ -41,43 +41,79 @@
   box-shadow: 19px 19px 25px 0px rgba(0, 0, 0, 0.75);
 }
 
-  
-  /* Slider content */
-  .slider-content {
-    display: flex;
-    width: 400%;
-    animation: slide 10s infinite;
+/* Slider content */
+.slider-content {
+  display: flex;
+  width: 400%;
+  animation: slide 10s infinite;
+}
+
+/* Slide */
+.slide {
+  flex: 1;
+  width: 100%;
+  transition: transform 1s;
+}
+
+/* Images */
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animation */
+@keyframes slide {
+  0% {
+    transform: translate(0%);
   }
-  
-  /* Slide */
-  .slide {
-    flex: 1;
+  33.33% {
+    transform: translate(-25%);
+  }
+  66.66% {
+    transform: translate(-50%);
+  }
+  99.99% {
+    transform: translate(-75%);
+  }
+  100% {
+    transform: translate(-75%);
+  }
+}
+@media screen and (max-width: 1280px) {
+  .about-background {
+    background: linear-gradient(
+      0deg,
+      var(--detail) 0%,
+      var(--primary) 80%,
+      var(--primary) 100%
+    );
+  }
+
+  .text-of-sub-container-one {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: left;
     width: 100%;
-    transition: transform 1s;
   }
-  
-  /* Images */
-  .slide img {
+
+  .about-container {
+    flex-direction: column;
+    position: relative; /* Make this a relative container for absolute positioning of children */
+    height: 100vh; /* Ensure the container has a defined height */
+  }
+
+  .sub-container-one {
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
-  
-  /* Animation */
-  @keyframes slide {
-    0% {
-      transform: translate(0%);
-    }
-    33.33% {
-      transform: translate(-25%);
-    }
-    66.66% {
-      transform: translate(-50%);
-    }
-    99.99% {
-      transform: translate(-75%);
-    }
-    100% {
-      transform: translate(-75%);
-    }
+
+  .sub-container-two {
+    position: absolute; /* Positioning relative to the about-container */
+    bottom: 0; /* Anchor it to the bottom */
+    width: 100%; /* Take full width */
+    height: auto; /* Set the height */
   }
+}
+
+
