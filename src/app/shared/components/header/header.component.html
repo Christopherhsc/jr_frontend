@@ -1,7 +1,7 @@
-<nav class="navbar">
+<nav class="navbar bg-gradient-to-r from-stone-500 to-stone-700 h-14">
   <div class="left-buttons" *ngIf="!isSmallScreen">
     <a href="om" class="nav-button">Om mig</a>
-    <a href="#" class="nav-button">Ydelser</a>
+    <a href="ydelser" class="nav-button">Ydelser</a>
     <a href="#" class="nav-button">Kontakt mig</a>
   </div>
   <div class="center-button">
@@ -18,8 +18,9 @@
     <button class="dropbtn" (click)="toggleDropdown()">Menu</button>
     <div class="dropdown-content">
       <button class="nav-button login" (click)="openLoginModal()">Login</button>
+      <a href="/">Hjem</a>
       <a href="om">Om mig</a>
-      <a href="#">Ydelser</a>
+      <a href="ydelser">Ydelser</a>
       <a href="#">Kontakt mig</a>
     </div>
   </div>

@@ -8,9 +8,10 @@ import { LandingPageComponent } from './landing-page.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { SliderIndicatorComponent } from './components/slider-indicator/slider-indicator.component';
+import { ServicesComponent } from './components/services/services.component';
 
 @NgModule({
-  declarations: [LandingPageComponent, HomeComponent, AboutComponent, SliderIndicatorComponent],
+  declarations: [LandingPageComponent, HomeComponent, AboutComponent, SliderIndicatorComponent, ServicesComponent],
   imports: [CommonModule, LandingPageRoutingModule],
 })
 export class LandingPageModule {}

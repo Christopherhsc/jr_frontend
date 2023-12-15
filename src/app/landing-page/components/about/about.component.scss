@@ -1,10 +1,4 @@
 .about-background {
-  background: linear-gradient(
-    90deg,
-    var(--primary) 0%,
-    var(--detail) 90%,
-    var(--detail) 100%
-  );
   height: 100vh;
 }
 
@@ -19,7 +13,7 @@
 
 .sub-container-one,
 .sub-container-two {
-  width: 50%; /* Adjust the width as necessary */
+  width: 50%;
 }
 
 .sub-container-one {
@@ -30,12 +24,12 @@
   font-size: 16px;
   line-height: 2;
   text-align: left;
-  width: 90%;
+  width: 70%;
   margin: auto;
 }
 
 .slider {
-  width: 100%; /* Adjust slider width to fill the container */
+  width: 100%;
   overflow: hidden;
   margin: 0 auto;
   box-shadow: 19px 19px 25px 0px rgba(0, 0, 0, 0.75);
@@ -45,7 +39,7 @@
 .slider-content {
   display: flex;
   width: 400%;
-  animation: slide 10s infinite;
+  animation: slide 15s infinite;
 }
 
 /* Slide */
@@ -81,39 +75,194 @@
   }
 }
 @media screen and (max-width: 1280px) {
-  .about-background {
-    background: linear-gradient(
-      0deg,
-      var(--detail) 0%,
-      var(--primary) 80%,
-      var(--primary) 100%
-    );
-  }
-
+  /* Styles for max-width 1280px */
   .text-of-sub-container-one {
+    width: 90%;
     font-size: 14px;
-    line-height: 1.5;
-    text-align: left;
-    width: 100%;
   }
-
-  .about-container {
-    flex-direction: column;
-    position: relative; /* Make this a relative container for absolute positioning of children */
-    height: 100vh; /* Ensure the container has a defined height */
+  @media screen and (max-width: 1024px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 14px;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
   }
-
-  .sub-container-one {
-    width: 100%;
-    height: 100%;
+  @media screen and (max-width: 912px) {
+    /* Styles for max-width 1024px */
+    .about-container {
+      flex-wrap: nowrap;
+      margin: none;
+      width: 100%;
+      flex-direction: column;
+    }
+    .sub-container-one {
+      width: 80%;
+    }
+    .text-of-sub-container-one {
+      font-size: 18px;
+      height: 32vh;
+    }
+    .sub-container-one {
+      width: 90%;
+    }
+    .sub-container-two {
+      width: 70%;
+    }
   }
+  @media screen and (max-width: 912px) {
+    /* Styles for max-width 1024px */
+    .sub-container-one {
+      width: 60%;
+    }
 
-  .sub-container-two {
-    position: absolute; /* Positioning relative to the about-container */
-    bottom: 0; /* Anchor it to the bottom */
-    width: 100%; /* Take full width */
-    height: auto; /* Set the height */
+    .text-of-sub-container-one {
+      font-size: 18px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 10%;
+    }
+    .sub-container-one {
+      width: 80%;
+    }
+    .sub-container-two {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    /* Styles for max-width 1024px */
+    .sub-container-one {
+      width: 100%;
+    }
+
+    .text-of-sub-container-one {
+      font-size: 15px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 5%;
+    }
+    .sub-container-one {
+      width: 80%;
+    }
+    .sub-container-two {
+      width: 50%;
+    }
+  }
+  @media screen and (max-width: 540px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 1%;
+    }
+    .sub-container-one {
+      width: 95%;
+    }
+    .sub-container-two {
+      width: 45%;
+    }
+  }
+  @media screen and (max-width: 430px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 13px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 1%;
+    }
+    .sub-container-one {
+      width: 95%;
+    }
+    .sub-container-two {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 414px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 1%;
+    }
+    .sub-container-one {
+      width: 95%;
+    }
+    .sub-container-two {
+      width: 80%;
+    }
+  }
+  @media screen and (max-width: 390px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 1%;
+    }
+    .sub-container-one {
+      width: 97%;
+    }
+    .sub-container-two {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 10px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 1%;
+    }
+    .sub-container-one {
+      width: 97%;
+    }
+    .sub-container-two {
+      width: 60%;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 12px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 3%;
+      line-height: 1.5;
+    }
+    .sub-container-one {
+      width: 97%;
+    }
+    .sub-container-two {
+      width: 70%;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    /* Styles for max-width 1024px */
+    .text-of-sub-container-one {
+      font-size: 11px;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+      padding-bottom: 3%;
+      line-height: 1.2;
+    }
+    .sub-container-one {
+      width: 99%;
+    }
+    .sub-container-two {
+      width: 80%;
+    }
   }
 }
-
-
