@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class SliderIndicatorComponent {
   @Input() text: string;
   @Input() activeIndex: number;
-  routes: string[] = ['/', '/om', '/ydelser', '/contact', '/other'];
+  routes: string[] = ['/', '/om', '/ydelser', '/kontakt', '/other'];
   @Input() activeColor: string = 'var(--primary)'; 
   @Input() inactiveColor: string = 'var(--detail)'; 
   @Input() textColor: string = 'var(--primary)'; 

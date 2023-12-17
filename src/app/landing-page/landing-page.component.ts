@@ -1,5 +1,4 @@
 import { ChangeDetectorRef, Component, Input } from '@angular/core';
-import * as Hammer from 'hammerjs';
 
 @Component({
   selector: 'app-landing-page',

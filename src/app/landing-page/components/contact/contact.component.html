@@ -1,0 +1,22 @@
+<div
+  class="contact-background bg-gradient-to-r from-stone-500 to-stone-700"
+  id="contact"
+>
+
+    <h2 class="contact-me-text">KONTAKT MIG</h2>
+
+    <div class="my-info-holder">
+      <mat-icon>email</mat-icon>
+      <a class="mail-to-text" href="mailto:Fitnessbyjennifer25@gmail.com">
+        Fitnessbyjennifer25@gmail.com
+      </a>
+    </div>
+
+    <app-slider-indicator
+      [text]="currentText"
+      [activeIndex]="currentIndex"
+      [activeColor]="'var(--detail)'"
+      [inactiveColor]="'var(--primary)'"
+      [textColor]="'var(--detail)'"
+    ></app-slider-indicator>
+</div>

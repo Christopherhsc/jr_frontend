@@ -1,0 +1,34 @@
+.contact-background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust this value based on your layout */
+  background: linear-gradient(
+    to right,
+    #a8a29e,
+    #4b5563
+  ); /* Example gradient */
+}
+
+.contact-me-text {
+  color: var(--detail);
+}
+
+/* Info holder styling */
+.my-info-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px; /* Spacing between elements */
+  color: var(--detail); /* Adjust text color as needed */
+}
+
+.mail-to-text {
+    margin-top: 20px;
+    transition:all 0.3s ease;
+}
+.mail-to-text:hover{
+    color: #4b5563;
+    font-size: 20px;
+}
