@@ -1,5 +1,10 @@
 .services-background {
   height: 100vh;
+  background: linear-gradient(to bottom, #a8a29e, #4b5563);
+}
+
+.services-right-header{
+  height: fit-content;
 }
 
 .services-header {
@@ -55,6 +60,9 @@
 .my-reviews-header {
   color: var(--detail);
 }
+.text-format{
+  margin: 5%;
+}
 
 .my-reviews-container {
   height: 200px;
@@ -72,7 +80,7 @@
 
 .arrow-button-container {
   width: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   display: flex;
 }
 
@@ -103,15 +111,17 @@ mat-expansion-panel {
   margin-bottom: 3%;
 }
 mat-expansion-panel:last-child {
-    margin-bottom: 0%;
-  }
+  margin-bottom: 0%;
+}
 
 .mat-expansion-panel-header {
   font-size: 14px;
+  border: 2px solid var(--detail);
 }
 
 mat-panel-title {
   color: var(--detail);
+  white-space: nowrap;
 }
 
 .disable_ripple:hover {
@@ -129,8 +139,8 @@ mat-panel-title {
   .services-right-container {
     width: 95%;
   }
+
   .arrow-button-container {
-    padding-top: 5%;
   }
   .text-format {
     font-size: 12px;
@@ -157,10 +167,12 @@ mat-panel-title {
     font-size: 10px;
   }
   .arrow-button-container {
-    padding-top: 10%;
   }
   .mat-expansion-panel-header {
     font-size: 12px;
+  }
+  .slider-display {
+    display: none;
   }
 }
 @media screen and (max-width: 912px) {
@@ -184,7 +196,6 @@ mat-panel-title {
     font-size: 18px;
   }
   .arrow-button-container {
-    padding-top: 25%;
   }
   .mat-expansion-panel-header {
     font-size: 16px;
@@ -211,7 +222,6 @@ mat-panel-title {
     font-size: 12px;
   }
   .arrow-button-container {
-    padding-top: 20%;
   }
   .mat-expansion-panel-header {
     font-size: 12px;
@@ -224,6 +234,9 @@ mat-panel-title {
   }
   .services-container {
     flex-direction: column;
+  }
+  .services-right{
+      padding-top: 10%;
   }
   .services-left {
     width: 100%;
@@ -240,7 +253,6 @@ mat-panel-title {
     width: 100%;
   }
   .arrow-button-container {
-    padding-top: 10%;
   }
 }
 @media screen and (max-width: 430px) {
@@ -266,10 +278,12 @@ mat-panel-title {
     width: 100%;
   }
   .arrow-button-container {
-    padding-top: 20%;
   }
   .mat-expansion-panel-header {
-    font-size: 9px;
+    font-size: 13px;
+  }
+  .text-format{
+    padding-top: 3%;
   }
 }
 @media screen and (max-width: 390px) {
@@ -301,13 +315,13 @@ mat-panel-title {
     width: 100%;
   }
   .text-format {
-    font-size: 10px;
+    font-size: 10.5px;
+    padding-top: 3%;
   }
   .arrow-button-container {
-    padding-top: 20%;
   }
   .mat-expansion-panel-header {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 375px) {
@@ -339,11 +353,11 @@ mat-panel-title {
     width: 100%;
   }
   .text-format {
-    font-size: 9px;
+    padding-top: 3%;
+    font-size: 11px;
     line-height: 1.5;
   }
   .arrow-button-container {
-    padding-top: 0;
   }
   .mat-expansion-panel-header {
     font-size: 8px;
@@ -352,5 +366,8 @@ mat-panel-title {
 @media screen and (max-width: 375px) {
   .text-format {
     line-height: 1.2;
+  }
+  .mat-expansion-panel-header {
+    font-size: 12px;
   }
 }

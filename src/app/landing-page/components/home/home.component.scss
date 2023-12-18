@@ -107,6 +107,16 @@
 }
 
 @media screen and (max-width: 1280px) {
+  .home-background{
+    background: linear-gradient(
+      to left,
+      #a8a29e,
+      #4b5563,
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .home-content {
     max-width: 750px;
     margin: 1%;
@@ -129,10 +139,7 @@
   }
 }
 @media screen and (max-width: 1024px) {
-  .home-background {
-    background: url(/assets/home.jpg) no-repeat top center;
-    background-size: cover;
-  }
+
   .home-content {
     max-width: 425px;
   }
@@ -158,10 +165,10 @@
     width: 125px;
     font-size: 15px;
   }
+  .slider-display{
+    display: none;
+  }
   @media screen and (max-width: 912px) {
-    .home-background {
-      background: url(/assets/home_mobile.jpeg) no-repeat top center;
-    }
     .home-content h3 {
       color: var(--detail);
     }
@@ -189,10 +196,6 @@
     }
   }
   @media screen and (max-width: 540px) {
-    .home-background {
-      background: url(/assets/home_mobile.jpeg) no-repeat top center;
-      background-size: 100% auto;
-    }
     .home-content {
       max-width: 270px;
     }
@@ -229,16 +232,8 @@
       color: var(--detail);
     }
     @media screen and (max-width: 430px) {
-      .home-background {
-        background: url(/assets/home_mobile.jpeg) no-repeat left center;
-        background-size: cover;
-      }
     }
     @media screen and (max-width: 375px) {
-      .home-background {
-        background: url(/assets/home_mobile.jpeg) no-repeat left center;
-        background-size: cover;
-      }
       .home-content {
         max-width: 200px;
         height: calc(100vh - 100px);
